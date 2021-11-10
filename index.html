@@ -1,0 +1,399 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+        <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+            integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+            crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+            integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+            crossorigin="anonymous"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+            integrity="sha384-JZR6Spejh5U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+            crossorigin="anonymous"></script>
+            <link rel="stylesheet" href="./assets/fontawesome-free-5.15.1-web/css/all.min.css">
+            <link rel="stylesheet" href="./assets/fontawesome-free-5.15.1-web/js/all.min.js">
+    <style>
+      * {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+li {
+  list-style-type: none;
+}
+
+.wrapper {
+  width: 100%;
+  height: 100%;
+  background-color: #f5f6fb;
+  padding-top: 68px;
+  padding-bottom: 98px;
+}
+
+@media only screen and (max-width: 576px) {
+  .wrapper {
+    padding: 0;
+  }
+}
+
+.main-container {
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.notice-box {
+  background-color: #ffffff;
+  padding: 60px 45px  90px;
+  border-radius: 10px;
+}
+
+@media only screen and (max-width: 576px) {
+  .notice-box {
+    padding: 100px 45px  90px;
+  }
+}
+
+@media only screen and (max-width: 576px) {
+  .notice-box .pocketarena {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+}
+
+.notice-box .pocketarena .img-icon {
+  width: 65px;
+  height: 67px;
+}
+
+.notice-box .pocketarena .img-icon img {
+  width: 100%;
+  height: auto;
+}
+
+.notice-box .pocketarena .brand-img {
+  width: 162px;
+}
+
+@media only screen and (max-width: 576px) {
+  .notice-box .pocketarena .brand-img {
+    width: 488px;
+    height: 71px;
+  }
+}
+
+.notice-box .pocketarena .brand-img img {
+  width: 100%;
+  height: auto;
+}
+
+.box-header .main-title {
+  margin: 60px 0 27px;
+  color: #282828;
+  font-family: "Lato";
+  font-size: 30px;
+  font-weight: 900;
+  font-style: italic;
+}
+
+@media only screen and (max-width: 576px) {
+  .box-header .main-title {
+    margin: 60px 0 45px;
+  }
+}
+
+.box-header .name {
+  color: #282828;
+  font-weight: 700;
+  font-family: "Lato";
+}
+
+.box-header .selling-price {
+  color: #38b0dd;
+  font-family: "Lato";
+  font-weight: 700;
+}
+
+.detail-box .detail-header {
+  background-color: #38b0dd;
+  padding-top: 10px;
+}
+
+.detail-box .detail-header-title {
+  color: #ffffff;
+  font-weight: 700;
+  font-family: "Lato";
+}
+
+.detail-box .detail-body {
+  padding: 30px 0;
+  background-color: #edf4fc;
+}
+
+.detail-box .detail-body .detail-item-name {
+  color: #282828;
+  font-size: 16px;
+  font-family: "Lato";
+  margin-bottom: 20px;
+  font-size: 18px;
+  font-weight: 700;
+}
+
+@media only screen and (max-width: 576px) {
+  .detail-box .detail-body .detail-item-name {
+    color: #38b0dd;
+  }
+}
+
+.detail-box .detail-body .detail-item .price-circle {
+  width: 87px;
+  height: 87px;
+  margin: 0 auto 10px;
+  border-radius: 50%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  font-weight: 700;
+  font-size: 18px;
+  background-color: #ffffff;
+  color: #282828;
+  font-family: "Lato";
+}
+
+@media only screen and (max-width: 576px) {
+  .detail-box .detail-body .detail-item .price-circle {
+    width: 67px;
+    height: 67px;
+  }
+}
+
+.detail-box .detail-body .detail-item .active {
+  background-color: #38b0dd !important;
+  color: #ffffff !important;
+}
+
+.detail-box .detail-body .detail-item p {
+  text-align: center;
+  font-size: 16px;
+  font-family: "Lato";
+}
+
+.detail-box .detail-body .detail-item .price-rectangle {
+  background-color: #ffffff;
+  color: #38b0dd;
+  text-align: center;
+  display: block;
+  padding: 20px 0;
+  border-radius: 10px;
+  font-weight: 500;
+  font-family: "Lato";
+  font-size: 24px;
+  font-weight: 900;
+}
+
+.detail-box .detail-body .detail-item .price-rectangle:hover {
+  text-decoration: none;
+}
+
+.box-footer {
+  padding-top: 40px;
+}
+
+.box-footer a {
+  text-decoration: underline;
+  color: #1b98cf;
+  font-family: "Lato";
+  font-size: 18px;
+  font-weight: 400;
+  text-decoration: underline;
+}
+
+.box-footer p {
+  color: #282828;
+  font-family: "Lato";
+  font-size: 18px;
+  font-weight: 300;
+  line-height: 1.3;
+}
+
+.box-footer p b {
+  font-weight: 700;
+}
+
+.box-footer .banner-img {
+  max-width: 100%;
+}
+
+.box-footer .banner-img img {
+  width: 100%;
+  height: auto;
+}
+
+.footer {
+  background-color: #f5f6fb;
+  padding: 75px 15px 0;
+  width: 100%;
+}
+
+.footer .list-item {
+  display: inline-block;
+  margin-right: 10px;
+}
+
+.footer .list-item .social-network {
+  width: 27px;
+  height: 27px;
+  border-radius: 50%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  background-color: #282828;
+}
+
+.footer .list-item .social-network i {
+  font-size: 20px;
+  color: #ffffff;
+}
+
+.footer .list-item .social-network:hover {
+  text-decoration: none;
+}
+
+.footer .all-rights {
+  margin-top: 50px;
+  font-size: 16px;
+  font-family: "Lato";
+  font-weight: 400;
+  color: #666666;
+}
+/*# sourceMappingURL=style.css.map */
+    </style>
+</head>
+<body>
+    <div class="wrapper">
+        <div class="main-container">
+            <div class="notice-box">
+                <div class="pocketarena">
+                    <div class="brand-img">
+                        <img src="https://pocketarena.com/images/static/pa_logo_mailform.png" alt="">
+                    </div>
+                </div>
+                <div class="box-header">
+                    <h2 class="main-title">
+                        Dear Jason,
+                    </h2>
+                    <p>
+                        your <span class="name">[castle name]</span> has successfully been sold to <span class="name">[buyer name]</span> for <span class="selling-price">[selling price]</span>.
+                    </p>
+                </div>
+
+                <div class="detail-box">
+                    <div class="detail-header d-flex align-items-center">
+                        <div class="container">
+                            <h5 class="detail-header-title">Revenue Share Detail</h5>
+                        </div>
+                    </div>
+                    <div class="detail-body">
+                        <div class="container">
+                            <div class="detail-item mb-5">
+                                <h5 class="detail-item-name">1 Revenue</h5>
+                                <div class="row">
+                                    <div class="col-md-4 col-sm-4 col-4">
+                                        <div class="price-circle active">&euro;300</div>
+                                        <p><b>You have bought the castle at price</b></p>
+                                    </div>
+                                    <div class="col-md-4 col-sm-4 col-4">
+                                        <div class="price-circle">&euro;1000</div>
+                                        <p>You have sold the castle at price</p>
+                                    </div>
+                                    <div class="col-md-4 col-sm-4 col-4">
+                                        <div class="price-circle">&euro;700</div>
+                                        <p>Revenue from this sell</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="detail-item mb-5">
+                                <h5 class="detail-item-name">2.Revenue is devided to:</h5>
+                                <div class="row">
+                                    <div class="col-md-4 col-sm-4 col-4">
+                                        <div class="price-circle">&euro;126</div>
+                                        <p>Players' revenue share</p>
+                                    </div>
+                                    <div class="col-md-4 col-sm-4 col-4">
+                                        <div class="price-circle">&euro;28</div>
+                                        <p>Emoji Games'revenue share</p>
+                                    </div>
+                                    <div class="col-md-4 col-sm-4 col-4">
+                                        <div class="price-circle active">&euro;546</div>
+                                        <p><b>Your revenue share</b></p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="detail-item">
+                                <h5 class="detail-item-name">3.You have received:</h5>
+                                <a href="#" class="price-rectangle">&euro;846</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="box-footer">
+                    <p>
+                        For further information about the revenue share,please check <a href="#">this article</a>.
+                        <br>
+                        To check your balance,please go to <a href="#">PA Wallet</a>.
+                    </p>
+                    <p>this is an automated e-mail.Please <b>don't reply to</b> this e-mail</p>
+                    <p>Best Regards
+                        <br>
+                        Pocket Arena Team.
+                    </p>
+                    <div class="banner-img">
+                        <img src="https://pocketarena.com/images/static/banner_castle_defense.png" alt="">
+                    </div>
+                </div>
+            </div>
+
+            <div class="footer text-center">
+                <ul class="social-links">
+                    <li class="list-item text-center">
+                        <img src="https://pocketarena.com/assets/main/bottom/icon_telegram_w.png" alt="">
+                    </li>
+                    <li class="list-item text-center">
+                        <img src="https://pocketarena.com/assets/main/bottom/icon_facebook_w.png" alt="">
+                    </li>
+                    <li class="list-item text-center">
+                        <img src="https://pocketarena.com/assets/main/bottom/icon_twitter_w.png" alt="">
+                    </li>
+                </ul>
+                <p class="all-rights">
+                    All Rights Reserved &#169; 2012-2021 Emoji Games GmbH
+                </p>
+            </div>
+        </div>
+
+    </div>
+</body>
+</html>
